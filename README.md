@@ -1,8 +1,6 @@
 # Geoloc
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/geoloc`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Geoloc allows you to add HTML5 Geolocation in your views without dealing with javascript. Geoloc offers customizable helper methods to add custom geolocation requests that can later send back the coordinates to your server
 
 ## Installation
 
@@ -22,7 +20,33 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Simple button with post request
+
+```erb
+<%= get_geoloc_button route, id, message %>
+```
+
+Where route is the route where the javascript will submit the post request with the coordinates,
+id is the id of the html element that is gonna output the server response and message is the button text (id and message are optional).
+
+
+
+```erb
+<%= get_geoloc_onload route, id %>
+```
+
+Submits a post requests with the coordinates after loading the window, without any user interaction
+
+Where route is the route where the javascript will submit the post request with the coordinates,
+id is the id of the html element that is gonna output the server response (id is optional).
+
+Add coordinates to form
+
+```erb
+<%= get_geoloc_form %>
+```
+
+This helper adds the coordinates to a form with hidden_fields with ids :geoloc_latitude, and :geoloc_longitude. Those parameters get sent to the server when the user submits the form. Id's of the hidden_fields must match the previous.
 
 ## Development
 
@@ -32,7 +56,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/geoloc/fork )
+1. Fork it ( https://github.com/legendss/geoloc/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

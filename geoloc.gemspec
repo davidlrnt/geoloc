@@ -6,7 +6,7 @@ require 'geoloc/version'
 Gem::Specification.new do |spec|
   spec.name          = "geoloc"
   spec.version       = Geoloc::VERSION
-  spec.authors       = ["legendss"]
+  spec.authors       = ["David Lorente, Inga Nikitina"]
   spec.email         = ["david.l.castilla@gmail.com"]
 
   if spec.respond_to?(:metadata)
