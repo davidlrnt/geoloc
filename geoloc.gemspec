@@ -13,9 +13,9 @@ Gem::Specification.new do |spec|
     spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
   end
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Geoloc allows you to add HTML5 Geolocation in your views without dealing with javascript. }
+  spec.description   = %q{Geoloc allows you to add HTML5 Geolocation in your views without dealing with javascript. Geoloc offers customizable helper methods to add custom geolocation requests that can later send back the coordinates to your server}
+  spec.homepage      = "https://github.com/legendss/geoloc"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
