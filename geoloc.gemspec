@@ -8,11 +8,6 @@ Gem::Specification.new do |spec|
   spec.version       = Geoloc::VERSION
   spec.authors       = ["David Lorente, Inga Nikitina"]
   spec.email         = ["david.l.castilla@gmail.com"]
-
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = ""
-  end
-
   spec.summary       = %q{Geoloc allows you to add HTML5 Geolocation in your views without dealing with javascript. }
   spec.description   = %q{Geoloc allows you to add HTML5 Geolocation in your views without dealing with javascript. Geoloc offers customizable helper methods to add custom geolocation requests that can later send back the coordinates to your server}
   spec.homepage      = "https://github.com/legendss/geoloc"
